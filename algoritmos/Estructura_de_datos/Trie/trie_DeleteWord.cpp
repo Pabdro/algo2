@@ -41,9 +41,41 @@ void isThereWord(string word) {
         cout<<"No Existee :P"<<endl;
     }
 }
-bool trieDeleteWord(string word){
-
+void trieDeleteWord(string word) {
+    if(searchWord(word)) {
+        node *currentNode = trie;
+        int tempDepth = 0;
+        int eliminacionDeNodo = 0;
+        for (int i = 0; i< word.length(); i++) {
+            int character = word[i] - 'a';
+            if(currentNode->children[character]->isWord && word.length() != i+1) {
+                eliminacionDeNodo+= tempDepth;
+            }
+            currentNode = currentNode->children[character];
+            tempDepth++;
+        }
+        currentNode->isWord = false;
+        currentNode = trie;
+        for (int i = 0; i< eliminacionDeNodo; i++) {
+            int character = word[i] - 'a';
+            currentNode = currentNode->children[character];
+        }
+        currentNode = NULL;
+        delete currentNode;
+        cout << "Se elimino la palabra " << word << endl;
+    }
 }
 int main() {
- 
+  init();
+    insertWord("alejandro");
+    isThereWord("alejandro"); 
+    insertWord("adrian");
+    isThereWord("adrian");
+    insertWord("andrea");
+    isThereWord("andrea");
+    trieDeleteWord("alejandro");
+    trieDeleteWord("adrian");
+    isThereWord("alejandro");
+    isThereWord("adrian");
+    return 0;
 }
