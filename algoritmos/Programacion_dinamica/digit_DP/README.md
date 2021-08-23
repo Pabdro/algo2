@@ -1,0 +1,2 @@
+## Digit DP
+En español "digital dp", el Digit dp es una técnica muy fácil y también útil para resolver muchos problemas de programación dinámica, al ver el nombre "Digit DP" es fácil adivinar que vamos a hacer algo usando los dígitos, elo digit dp es útil gracias a que es capaz de llegar a rangos desde 0 hasta 10^18.

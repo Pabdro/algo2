@@ -1,0 +1,2 @@
+## Backtracking
+En español "vuelve atrás", el backtracking es un algoritmo el cual es una mejora de la técnica conocida como fuerza bruta, el algoritmo del backtracking basa su estrategia en encontrar soluciones mediante descarte que es ir encontrando candidatos, a la vez que ir descartando estos mismos candidatos, se suele implementar este tipo de algoritmos como un procedimiento recursivo.

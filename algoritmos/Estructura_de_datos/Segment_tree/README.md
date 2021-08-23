@@ -1,0 +1,3 @@
+## Segment tree
+En español "arbol de segmentos", un segment tree es una estructura de datos en forma de árbol para guardar intervalos o segmentos, permite consultar sobre intervalos antes almacenados.
+El segment tree, cada uno de sus nodos son representados por intervalos en el cual puede estar almacenado en un especifico intervalo y cabe resaltar que podemos realizar las consultas en un tiempo de complejidad O(log(n)).

@@ -1,0 +1,2 @@
+## BIT
+En español árbol binario indexado o árbol de Fenwick, el BIT es una estructura de datos que proporciona métodos eficientes para el cálculo y la manipulación de las cantidades de prefijos de una array de valores, la capacidad de realizar todas sus operaciones en un tiempo de complejidad O(log(n)), uso de poca memoria pero muy dificil de entender.

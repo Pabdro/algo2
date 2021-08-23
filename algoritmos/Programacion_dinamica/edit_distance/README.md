@@ -1,0 +1,2 @@
+## Edit Distance
+En español "editar distancia", la edit distance es una forma de cuantificar qué tan diferentes son dos cadenas (por ejemplo, palabras) entre sí contando el número mínimo de operaciones necesarias para transformar una cadena en la otra, encuentran aplicaciones en el procesamiento del lenguaje natural, donde la corrección ortográfica automática puede determinar las posibles correcciones para una palabra mal escrita mediante la selección de palabras de un diccionario que tienen una distancia baja a la palabra en cuestión.
