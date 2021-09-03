@@ -24,7 +24,7 @@ int find(int x) {
         return parent[x];
     }
 }
-void unionRango(int x,int y) { 
+void unionR(int x,int y) { 
     int xRaiz = find(x);
     int yRaiz = find(y);
     if(rango[xRaiz] > rango[yRaiz]) {
@@ -48,7 +48,7 @@ int main() {
     while(nrounionRangoes--) {
         int x,y;
         cin>>x>>y; 
-        unionRango(x,y);
+        unionR(x,y);
     }
     for(int i=0;i<=n;i++){ 
         cout<<"["<<i<<"] ";
